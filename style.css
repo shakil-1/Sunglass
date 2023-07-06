@@ -31,7 +31,7 @@
     align-items: center;
     height: 100vh;
     color: aliceblue;
-  
+
 }
 
 .nav-content div h3 {
@@ -40,10 +40,12 @@
     line-height: 50px;
 
 }
-.nav-content div h1{
+
+.nav-content div h1 {
     font-size: 50px;
 }
-.nav-content div a{
+
+.nav-content div a {
     color: aliceblue;
     font-size: 30px;
     font-weight: bold;
@@ -51,12 +53,159 @@
 }
 
 /* ?????????????????????????????? */
-.heading-1{
-   text-align: center;
-   font-size: 40px;
-   font-weight: bold; 
+.heading-1 {
+    text-align: center;
+    font-size: 40px;
+    font-weight: bold;
 }
-.heading-2{
+
+.heading-2 {
     text-align: center;
     line-height: 25px;
+}
+
+.card-header {
+    width: 80vw;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    padding: 20px 0;
+
+}
+
+.card-section {
+    width: 17.5vw;
+    position: relative;
+    text-align: center;
+
+}
+
+.card-section h3 {
+    position: absolute;
+    margin-top: 27px;
+    font-size: 30px;
+    margin-left: 45px;
+}
+
+.card-section h4 {
+    position: absolute;
+    margin-top: -64px;
+    font-size: 30px;
+    margin-left: 80px;
+}
+
+.card-hover {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+    width: 17.5vw;
+    height: 32.5vh;
+    top: 0;
+    opacity: 0;
+
+
+    background-image: linear-gradient(#1d1b30f7 0 0);
+    background-size: 200% .08em;
+    /* .08em is our fixed height, use what you want  */
+    background-position: 200% 100%;
+    background-repeat: no-repeat;
+    transition: background-size .3s, background-position .3s .3s;
+
+
+}
+
+.card-hover:hover {
+    transition: background-size .3s .3s, background-position .3s;
+    background-size: 200% 100%;
+    background-position: 100% 100%;
+    opacity: 1;
+}
+
+.card-hover h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: -1px;
+    margin: 0 auto;
+    line-height: 0px;
+    transition: .5s;
+}
+
+.hover-icon {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    font-weight: bolder;
+    font-size: 24px;
+    padding: 30px 0px;
+    transition: .5s;
+}
+
+
+
+
+
+
+.card-banner {
+    width:100vw;
+    margin: 0 auto;
+    padding: 50px 0;
+
+    /* background-image: linear-gradient(#1095c1,#1095c1);
+    background-size: 0 100%;
+    background-repeat: no-repeat;
+    transition: .4s; */
+}
+.card-banner:hover{
+    /* background-size: 100% 100%; */
+}
+.card-banner img{
+width: 100%;
+}
+
+.banner-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 5px;
+    margin: 0 auto;
+}
+
+.img-hover{
+    width: 100%;
+   position: relative;
+}
+.img-hover:hover{
+    background-size: 100% 100%
+}
+
+.effect{
+    /* background: #83838d; */
+    width: 100% ;
+    height: 98.5%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+
+
+
+    background:
+    repeating-linear-gradient(-45deg, #fff 0 15px, #000  0 30px),
+    repeating-linear-gradient(-45deg, #83838d 0 15px, #0000 0 30px),
+    #000;
+  -webkit-background-clip: text,padding-box,text;
+          background-clip: text,padding-box,text;
+  background-size: 500px 500px;
+  background-position: left 0 top -500px;
+  background-repeat: no-repeat;
+  transition: 0.5s linear;
+
+
+
+  
+}
+.effect:hover {
+    background-position: left 11px top -213px;
+    opacity: 1;
 }
